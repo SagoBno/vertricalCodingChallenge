@@ -3,9 +3,9 @@ import productController from '../controllers/productController';
 
 const router = Router();
 
-router.get('/:title', productController.findProducts);
+router.get('/:id', productController.getProduct);
 router.get('/', productController.getAllProducts);
-router.post('/create', productController.createProduct);
+router.post('/', productController.createProduct);
 router.put('/:id', productController.updateProduct);
 router.delete('/:id', productController.deleteProduct);
 
